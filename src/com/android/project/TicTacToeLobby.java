@@ -16,14 +16,14 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.CheckBox;
+//import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
 public class TicTacToeLobby extends TicTacToeGenericActivity implements OnClickListener, Runnable, OnCancelListener {
 
 	private Button buttonLobbyConnect;
-	private CheckBox checkBoxVsPlayer;
+//	private CheckBox checkBoxVsPlayer;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class TicTacToeLobby extends TicTacToeGenericActivity implements OnClickL
 		buttonLobbyConnect.setOnClickListener(TicTacToeLobby.this);
 		Button buttonLobbyJoin = (Button) findViewById(R.id.button_lobby_join);
 		buttonLobbyJoin.setOnClickListener(TicTacToeLobby.this);
-		checkBoxVsPlayer = (CheckBox) findViewById(R.id.checkBox_vsplayer);
+//		checkBoxVsPlayer = (CheckBox) findViewById(R.id.checkBox_vsplayer);
 	}
 
 	@Override
@@ -61,12 +61,12 @@ public class TicTacToeLobby extends TicTacToeGenericActivity implements OnClickL
 		if(TicTacToeHelper.game.getSocket() != null) {
 			if(v.getId() == R.id.button_lobby_create) {
 				TicTacToeHelper.game.setCallback(TicTacToeLobby.this);
-				if(checkBoxVsPlayer.isChecked()) {
-					TicTacToeHelper.game.createGame();					
-				}
-				else {
+//				if(checkBoxVsPlayer.isChecked()) {
+//					TicTacToeHelper.game.createGame();					
+//				}
+//				else {
 					TicTacToeHelper.game.createSingleGame();					
-				}
+//				}
 			}
 			else if(v.getId() == R.id.button_lobby_join) {
 				TicTacToeHelper.game.setCallback(TicTacToeLobby.this);
