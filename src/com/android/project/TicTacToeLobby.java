@@ -41,7 +41,7 @@ public class TicTacToeLobby extends TicTacToeGenericActivity implements OnClickL
 
 	@Override
 	public void onClick(View v) {
-		String ip = "130.229.154.233";
+		String ip = "";
 		int port = 8080;
 		
 		EditText editTextIp = (EditText) findViewById(R.id.editText_lobby_ip);
@@ -51,7 +51,7 @@ public class TicTacToeLobby extends TicTacToeGenericActivity implements OnClickL
 			ip = editTextIp.getText().toString();
 		}
 		if(editTextPort.getText().length() > 0) {
-			port = Integer.getInteger(editTextPort.getText().toString());
+			port = Integer.parseInt((editTextPort.getText().toString()));
 		}
 		
 		// Threading
