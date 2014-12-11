@@ -16,7 +16,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-//import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -51,7 +50,7 @@ public class TicTacToeLobby extends TicTacToeGenericActivity implements OnClickL
 			ip = editTextIp.getText().toString();
 		}
 		if(editTextPort.getText().length() > 0) {
-			port = Integer.parseInt((editTextPort.getText().toString()));
+			port = Integer.valueOf(editTextPort.getText().toString());
 		}
 		
 		// Threading
