@@ -3,4 +3,16 @@
     
     <string name="app_name">TicTacToe</string>
 
+    <string name="button_newonlinegame">New Online Game</string>
+    
+    <string name="textView_lobby_title">Connect</string>
+    
+    <string name="editText_lobby_ip">Input server IP</string>
+    
+    <string name="editText_lobby_port">Input server port</string>
+    
+    <string name="button_lobby_create">Create</string>
+    <string name="button_lobby_join">Join</string>
+    <string name="checkBox_vsplayer">VS Player?</string>
+    
 </resources>

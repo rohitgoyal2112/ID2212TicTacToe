@@ -14,7 +14,7 @@
 	android:layout_marginTop="20dip"
 	/>
     
-	<ImageView android:id="@+id/new_game"
+	<ImageView android:id="@+id/new_game_online"
 	android:background="@drawable/new_game"
 	android:layout_width="wrap_content"
 	android:layout_height="60dip"
@@ -23,7 +23,15 @@
 	android:layout_below="@id/title"
 	android:layout_marginTop="20dip"
 	/>
-	
+	<ImageView android:id="@+id/new_game"
+	android:background="@drawable/new_game"
+	android:layout_width="wrap_content"
+	android:layout_height="60dip"
+	android:layout_alignParentRight="true" 
+	android:layout_marginRight="5dip"
+	android:layout_below="@id/new_game_online"
+	/>
+<!-- 	
 	<ImageView android:id="@+id/options"
 	android:background="@drawable/options"
 	android:layout_width="wrap_content"
@@ -41,14 +49,14 @@
 	android:layout_marginRight="5dip"
 	android:layout_below="@id/options"
 	/>
-	
+ -->	
 	<ImageView android:id="@+id/quit"
 	android:background="@drawable/quit"
 	android:layout_width="wrap_content"
 	android:layout_height="60dip"
 	android:layout_alignParentRight="true" 
 	android:layout_marginRight="5dip"
-	android:layout_below="@id/help"
+	android:layout_below="@id/new_game"
 	/>
     
 </RelativeLayout>
